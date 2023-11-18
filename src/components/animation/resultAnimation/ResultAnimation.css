@@ -1,0 +1,22 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  overflow: hidden;
+  animation: rotateDiagonal 5s linear infinite;
+}
+
+.diagonal-image {
+  width: 100%;
+  max-height: 140px;
+}
+
+@keyframes rotateDiagonal {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

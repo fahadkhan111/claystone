@@ -1,0 +1,21 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cylinder-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+}
+
+.cylinder-image {
+  width: 200px; /* Adjust image width as needed */
+  height: auto;
+  animation: rotate 5s linear infinite; /* Apply the animation */
+}

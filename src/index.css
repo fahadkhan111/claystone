@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: hsl(0, 0%, 98%);
+}
+
+
+.blurred-text {
+  transition: filter 3s ease-in-out;
+}
+
+
+.container-shadow{
+  /* margin: 50px auto;  */
+  opacity: 0;
+  transition: box-shadow 1s ease-in-out;
+  /* box-shadow: 0 0 15px rgba(230, 182, 8, 1); */
+  opacity: 1
+
+}
+
+.shadow-visible {
+  opacity: 1;
+  box-shadow: 0 0 25px rgb(13, 183, 209); /* Equally distributed shadow */
+
+}
+
+.shadow-visible-orange {
+  opacity: 1;
+  box-shadow: 0 0 25px rgba(230, 182, 8, 1); /* Equally distributed shadow */
+
+}
+
+.shadow-hidden {
+  /* opacity: 100%; */
+  box-shadow: none
+
+}
+
+.text-outline {
+  text-shadow: -1px -1px 0 #004D82, 1px -1px 0 #004D82, -1px 1px 0 #004D82, 1px 1px 0 #004D82;
+}
+
+
+.water-animation {
+  animation-name: water;
+  animation-duration: 1s; 
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  animation-fill-mode: forwards;
+  text-shadow: 0 0 20px #000; 
+}
+
+.bottomBorder{
+  
+  align-items: center;
+}
+
+.bottomBorder::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 10px;
+  width: 100%;
+  background-color: #FF9D00;
+}
+
+
+
+/* mobile menu animation */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  background-color: #1f2937;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out; /* Add a transition effect */
+}
+
+.menu-open {
+  transform: translateX(0);
+}
+
+.img-height{
+  height: calc(100vh - 87px)
+}
+
+.services-box-shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

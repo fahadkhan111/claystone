@@ -1,0 +1,28 @@
+@keyframes waveAnimation {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(5px) translateY(-10px);
+  }
+  50% {
+    transform: translateX(0) translateY(0);
+  }
+  75% {
+    transform: translateX(-5px) translateY(10px);
+  }
+}
+
+.solution-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 152px; 
+  height: 141px;
+  overflow: hidden;
+}
+.waving-image {
+  width: 140px;
+  max-height: 140px;
+  animation: waveAnimation 2s infinite;
+}

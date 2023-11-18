@@ -1,0 +1,27 @@
+.Technology-animation-container {
+    position: relative;
+    width: 140px; /* Adjust the size as needed */
+    /* height: 200px; */
+    animation: pulseAndRotateAndHorizontal 12s ease-in-out infinite;
+  }
+  
+  .Technology-jellyfish {
+    max-width: 100%;
+    max-height: 140px;
+  }
+  
+  @keyframes pulseAndRotateAndHorizontal {
+    0%, 100% {
+      transform: scale(1) rotate(0deg) scaleX(1);
+    }
+    25% {
+      transform: scale(1.1) rotate(180deg) scaleX(-1);
+    }
+    50% {
+      transform: scale(1) rotate(360deg) scaleX(1);
+    }
+    75% {
+      transform: scale(1.1) rotate(540deg) scaleX(-1);
+    }
+  }
+  
